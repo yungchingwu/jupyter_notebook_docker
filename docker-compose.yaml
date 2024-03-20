@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  jupyter_notebook_docker:
+    build:
+      context: ./jupyter_notebook_server
+      dockerfile: Dockerfile
+    image: jupyter_notebook_docker:1.0
+    container_name: jupyter_notebook_docker
+    ports:
+      - 8888:8888
+    volumes:
+      - ./jupyter_notebook_server/sync_note:/app/sync_note

@@ -1,0 +1,9 @@
+name: jupyter_notebook_docker
+channels:
+  - defaults
+dependencies:
+  - jupyter=1.0.0
+  - pandas=2.1.4
+  - plotly=5.9.0
+  - pyspark=3.4.1
+  - python=3.10.13
